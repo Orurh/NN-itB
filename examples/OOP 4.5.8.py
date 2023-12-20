@@ -67,25 +67,5 @@ class Stack(StackInterface):
         pre_last._next = None
         return x
 
-<<<<<<< HEAD
-st = Stack()
-
-obj_top = StackObj("obj")
-st.push_back(obj_top)
-
-obj = StackObj("obj")
-st.push_back(obj)
-
-n = 0
-h = st._top
 
 
-del_obj = st.pop_back()
-assert del_obj == obj, "метод pop_back возвратил неверный объект"
-
-del_obj = st.pop_back()
-assert del_obj == obj_top, "метод pop_back возвратил неверный объект"
-
-assert st._top is None, "неверное значение атрибута _top"
-=======
->>>>>>> ab0503e (связный список с абстрактным классом)
