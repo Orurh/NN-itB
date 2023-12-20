@@ -1,14 +1,22 @@
 from abc import ABC, abstractmethod
 
 
+<<<<<<< HEAD
 class StackInterface:
+=======
+class StackInterface(ABC):
+>>>>>>> ab0503e (связный список с абстрактным классом)
     @abstractmethod
     def push_back(self, obj):
         pass
 
     @abstractmethod
     def pop_back(self):
+<<<<<<< HEAD
         raise TypeError
+=======
+        pass
+>>>>>>> ab0503e (связный список с абстрактным классом)
 
 class StackObj:
     def __init__(self, data):
@@ -24,7 +32,11 @@ class Stack(StackInterface):
     def push_back(self, obj):
         if not self._top:
             self._top = obj
+<<<<<<< HEAD
             return
+=======
+            return None
+>>>>>>> ab0503e (связный список с абстрактным классом)
         next = self._top
         while next._next != None:
             next = next._next
@@ -55,6 +67,7 @@ class Stack(StackInterface):
         pre_last._next = None
         return x
 
+<<<<<<< HEAD
 st = Stack()
 
 obj_top = StackObj("obj")
@@ -74,3 +87,5 @@ del_obj = st.pop_back()
 assert del_obj == obj_top, "метод pop_back возвратил неверный объект"
 
 assert st._top is None, "неверное значение атрибута _top"
+=======
+>>>>>>> ab0503e (связный список с абстрактным классом)
